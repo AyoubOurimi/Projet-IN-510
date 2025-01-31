@@ -1,0 +1,6 @@
+S -> AB
+A -> A0A | a
+B -> A1B | b
+S0 -> AB
+A0 -> a
+A1 -> b

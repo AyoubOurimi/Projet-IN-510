@@ -1,0 +1,29 @@
+Projet IN-510
+
+    Description:
+
+Ce projet contient des scripts Python pour analyser et générer des résultats à partir de grammaires formelles. Les principaux scripts incluent :
+
+Grammaire.py
+Generateur.py
+
+Les fichiers de entrée et de sortie sont gérés via un Makefile.
+
+    Exécuter les scripts avec Make :
+
+Lancer les scripts : make
+
+Cela exécute les commandes suivantes :
+
+python Grammaire.py test3.general           --> génère 2 fichier test3.chomsky et test3.greibach ou la grammaire du fichier test3.general est retranscrit avec la grammaire associé au fichier.
+python Generateur.py 3 exemple.chomsky      --> génère le language de la grammaire du fichier exemple.chomsky
+python Generateur.py 3 exemple.greibach     --> génère le language de la grammaire du fichier exemple.greibach
+python Generateur.py 3 exemple.general      --> génère le language de la grammaire du fichier exemple.general
+
+Comparer les résultats : make diff
+
+Cette commande génère des fichiers de comparaison (res_nomgram.txt) et sauvegarde les différences dans :
+
+diff_chomsky_greibach.txt
+diff_chomsky_general.txt
+diff_greibach_general.txt
