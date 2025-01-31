@@ -1,4 +1,4 @@
-# Projet IN-510
+# Projet IN-520
 
 ## Description
 Ce projet a pour objectif d'analyser et de générer des résultats à partir de grammaires formelles. Les principaux scripts Python permettent de travailler avec des formats tels que les formes de Chomsky et de Greibach. Un Makefile est fourni pour automatiser les tâches.
